@@ -5,13 +5,17 @@
   
 
   
-  <title>Archives: 2020 | Karloz&#39;s Blog</title>
+  <title>CFF 2016 幂数加密 | Karloz&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Karloz&#39;s Blog">
-<meta property="og:url" content="http://example.com/archives/2020/index.html">
+  <meta name="description" content="首先了解幂数加密  二进制幂数加密法，由于英文字母只有26个字母。只要2的0、1、2、3、4、5次幂就可以表示31个单元。通过用二进制幂数表示字母序号数来加密。例 由于4&#x3D;2^2 所以D加密过之后是2；15&#x3D;2^0+2^1+2^2+2^3所以O加密后是0123。  题目提示解出为8位大写字母查看本题文本 8842101220480224404014224202480122观察数字，整体为逆序，因此">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CFF 2016 幂数加密">
+<meta property="og:url" content="http://example.com/2021/01/18/CFF-2016-%E5%B9%82%E6%95%B0%E5%8A%A0%E5%AF%86/index.html">
 <meta property="og:site_name" content="Karloz&#39;s Blog">
+<meta property="og:description" content="首先了解幂数加密  二进制幂数加密法，由于英文字母只有26个字母。只要2的0、1、2、3、4、5次幂就可以表示31个单元。通过用二进制幂数表示字母序号数来加密。例 由于4&#x3D;2^2 所以D加密过之后是2；15&#x3D;2^0+2^1+2^2+2^3所以O加密后是0123。  题目提示解出为8位大写字母查看本题文本 8842101220480224404014224202480122观察数字，整体为逆序，因此">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-01-18T02:23:29.000Z">
+<meta property="article:modified_time" content="2021-01-18T02:23:43.892Z">
 <meta property="article:author" content="Karloz">
 <meta name="twitter:card" content="summary">
   
@@ -62,135 +66,61 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/12/27/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E8%AE%AD-crypto1/" class="archive-article-date">
-  <time datetime="2020-12-27T12:59:52.000Z" itemprop="datePublished">Dec 27</time>
+        <section id="main"><article id="post-CFF-2016-幂数加密" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2021/01/18/CFF-2016-%E5%B9%82%E6%95%B0%E5%8A%A0%E5%AF%86/" class="article-date">
+  <time datetime="2021-01-18T02:23:29.000Z" itemprop="datePublished">2021-01-18</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/27/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E8%AE%AD-crypto1/">第一次实训 crypto1</a>
+    <h1 class="article-title" itemprop="name">
+      CFF 2016 幂数加密
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/12/20/%E7%A8%B3%E4%BD%8F%E6%88%91%E4%BB%AC%E8%83%BD%E8%B5%A2/" class="archive-article-date">
-  <time datetime="2020-12-20T11:35:13.000Z" itemprop="datePublished">Dec 20</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/20/%E7%A8%B3%E4%BD%8F%E6%88%91%E4%BB%AC%E8%83%BD%E8%B5%A2/">稳住我们能赢</a>
-    </h1>
-  
+        <h1 id=""><a href="#" class="headerlink" title=""></a></h1><p><strong>首先了解幂数加密</strong></p>
+<blockquote>
+<p>二进制幂数加密法，由于英文字母只有26个字母。只要2的0、1、2、3、4、5次幂就可以表示31个单元。通过用二进制幂数表示字母序号数来加密。<br>例 由于4=2^2 所以D加密过之后是2；15=2^0+2^1+2^2+2^3所以O加密后是0123。</p>
+</blockquote>
+<p>题目提示解出为8位大写字母<br>查看本题文本 8842101220480224404014224202480122<br>观察数字，整体为逆序，因此在当前后两位相同或后数比前大的位置进行分隔<br>但以此方法解密得到的超过8位，说明可能并不是幂数加密</p>
+<p>本题实际加密方法</p>
+<blockquote>
+<p>01248密码，又称云影密码 与二进制幂加密不同，这个加密法采用的是0作间隔，其他非0数隔开后组合起来相加表示序号1-26之一的字母（a/A,b/B,c/C…z/Z)</p>
+</blockquote>
+<p>解得8位大写字母WELLDONE</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/12/19/%E6%96%B0%E7%94%9F%E8%B5%9B-pwn2-wp/" class="archive-article-date">
-  <time datetime="2020-12-19T13:38:41.000Z" itemprop="datePublished">Dec 19</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/19/%E6%96%B0%E7%94%9F%E8%B5%9B-pwn2-wp/">新生赛 pwn2 wp</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/12/13/%E6%96%B0%E7%94%9F%E8%B5%9Bre2-crackme-WP/" class="archive-article-date">
-  <time datetime="2020-12-13T13:38:13.000Z" itemprop="datePublished">Dec 13</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/01/18/CFF-2016-%E5%B9%82%E6%95%B0%E5%8A%A0%E5%AF%86/" data-id="ckk1y2u4i0000x8ildggghpjp" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/13/%E6%96%B0%E7%94%9F%E8%B5%9Bre2-crackme-WP/">新生赛re2 crackme WP</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/12/10/Test/" class="archive-article-date">
-  <time datetime="2020-12-10T11:58:01.000Z" itemprop="datePublished">Dec 10</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/10/Test/">Test</a>
-    </h1>
-  
-
-    </header>
+    </footer>
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2020/12/10/My-First-Post/" class="archive-article-date">
-  <time datetime="2020-12-10T11:16:53.000Z" itemprop="datePublished">Dec 10</time>
-</a>
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/12/10/My-First-Post/">My First Post</a>
-    </h1>
   
+    <a href="/2021/01/18/NJUPT-CTF-2017-maze/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">NJUPT CTF 2017 maze</div>
+    </a>
+  
+</nav>
 
-    </header>
-  </div>
+  
 </article>
-  
-  
-    </div></section>
-  
-
 
 </section>
         
